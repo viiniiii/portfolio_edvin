@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Edvin Perfundi</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    /* CSS for the typing animation */
+    .typed::after {
+      animation: typing 1s steps(1, end) infinite;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  
+    @keyframes typing {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 4ch;
+      }
+    }
+  
+    /* CSS for specific colors and bold */
+    .python-developer {
+      color: orange;
+      font-weight: bold;
+    }
+  
+    .web-developer {
+      color: blue;
+      font-weight: bold;
+    }
+  
+    .data-analyst {
+      color: green;
+      font-weight: bold;
+    }
+  
+    .graphic-designer {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <header id="header">
+    <div class="d-flex flex-column">
+      
+      <div class="profile">
+        <img src="./assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.google.com/" target="_blanks" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/edvin-p%C3%ABrfundi-7a0b2827a/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+        <a class="nav-link active" aria-current="page" href="#about">About</a>
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        {% load static %}
+        <a class="nav-link" href="{% static 'portfolio/cv_edvin_perfundi.pdf' %}" download="{% static 'portfolio/cv_edvin_perfundi.pdf' %}" >Download CV</a>
+        <a class="nav-link" href="{% url 'blog:home' %}">Blogs</a>
+
+      </div>
+    </div>
+  </div>
+</nav>
+    </div>
+  </header>
+
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Edvin Perfundi</h1>
+      {% load static %}
+      <img src="{% static 'portfolio/IMG_4259.jpg' %}" width="300" height="350">
+      <p>I'm a <span class="typed" data-typed-items="<b style='color:orange'>Python Developer</b>, <b style='color:red'>Web Developer</b>, <b style='color:	#faeb48'>Data analyst</b>, <b style='color:blue'>Graphics Designer</b>"></span></p>
+      
+    </div>
+  </section>
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>I am a young individual who thrives on the excitement of exploring vibrant nightlife. With a zest for adventure and a passion for discovering new experiences, I immerse myself in the energetic atmosphere of bustling streets, lively clubs, and captivating cafes. Embracing the thrill of meeting like-minded individuals, dancing to infectious beats, and creating unforgettable memories, I find joy in every moment of the vibrant nightlife scene. Each night brings a new chapter in my journey, filled with excitement, exploration, and the promise of memorable experiences.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Back-end Developer &amp; Data analyst.</h3>
+            <p class="fst-italic">
+              I am a passionate Back-end Developer and Data Analyst, dedicated to leveraging my skills and knowledge to deliver high-quality solutions. With a strong focus on Python programming and back-end development, I strive to create efficient and scalable applications. I have experience working with frameworks like Django and Flask, and I am well-versed in database management using SQL. Additionally, I have a keen interest in data analysis and extracting valuable insights from complex datasets.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>16 June 2003</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+355 68 56 36 964</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Durrës, Albania</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>edvinperfundi21@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              I approach my work with a strong attention to detail and a commitment to continuous learning. I am constantly exploring new technologies and staying updated with the latest trends in the industry. I believe in the power of teamwork and effective communication to deliver successful projects.
+              <br/>
+              <br/>
+              Feel free to reach out to me to discuss potential collaborations or any inquiries you may have.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>In the Skills section, you'll find my expertise primarily focused on Python and back-end development. With a strong foundation in Python programming, I possess extensive knowledge of libraries, frameworks, and tools used in web development, such as Django and Flask. I am proficient in database management using SQL and have experience working with various database systems. Additionally, I have a solid understanding of RESTful API design and implementation. I am skilled in version control systems like Git, which allows for efficient collaboration and code management. I am dedicated to writing clean, efficient, and maintainable code, following best practices and industry standards. With my Python-centric skill set, I am well-equipped to handle back-end development tasks and contribute to the success of your projects. Let's connect and discuss how I can bring value to your team.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">SQL <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Graphic Design <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Video editing <i class="val">35%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Welcome to my portfolio, where I showcase my finest work and creative endeavors. With a passion for excellence and a keen eye for detail, I have meticulously curated a collection of my projects that reflect my skills and expertise. Each piece in my portfolio represents a unique blend of innovation, craftsmanship, and artistic vision. I invite you to explore my portfolio and witness the diversity and depth of my work. Whether it's web design, graphic art, or multimedia creations, you'll find a range of captivating projects that demonstrate my dedication to delivering exceptional results.</p>
+        </div>
+        {% for project in projects %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <h2>{{project.title}}</h2>
+            <p>{{project.description}}</p>
+            <img src="{{project.image.url}}" width="300" height="300">
+            {% if project.url %}
+                <br>
+                <a href="{{project.url}}">Link</a>
+            {% endif %}
+          </div>
+
+        {% endfor %}
+        </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>As a dedicated professional, I offer a comprehensive range of services to meet your individual needs. With a focus on personalized attention and quality craftsmanship, I provide top-notch solutions that are tailored specifically for you. From consultation and planning to execution and delivery, I handle every aspect of the service with meticulous care. Trust me to deliver exceptional results and provide you with the highest level of satisfaction.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <h4 class="title">Website Development</h4>
+            <p class="description"> I can create modern and responsive websites tailored to your clients' needs, utilizing the latest web technologies and frameworks like Django and Flask. With a focus on user experience and functionality, I ensure that each website is visually appealing and easy to navigate.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="title">Back-end Development</h4>
+            <p class="description">I specialize in building robust and efficient back-end systems that power websites and web applications. From designing and implementing databases using SQLAlchemy and SQLite to developing RESTful APIs, I ensure seamless integration between front-end and back-end components, delivering high-performance solutions.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="title">Data Analysis</h4>
+            <p class="description">I offer data analysis services to extract valuable insights from complex datasets. With expertise in Python and tools like Pandas and NumPy, I can analyze data, identify patterns, and provide meaningful visualizations to support informed decision-making.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="title">Database Management</h4>
+            <p class="description">I can design and optimize databases, ensuring efficient data storage and retrieval. Using tools like SQLAlchemy and SQLite, I create secure and scalable database solutions that meet your clients' needs.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <h4 class="title">Web Automation</h4>
+            <p class="description">I specialize in automating repetitive tasks and streamlining workflows through web automation. By leveraging Python, automation frameworks like Selenium, and web technologies, I can develop customized solutions to save time and increase efficiency for your clients.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <h4 class="title">Graphic Design</h4>
+            <p class="description"> I provide creative graphic design services, crafting visually stunning designs using tools like Canva and Photoshop. From logo design to marketing materials, I create compelling visuals that enhance brand identity and captivate audiences.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Feel free to reach out to me using the contact information provided below. I'm available for any inquiries, collaborations, or just to say hello. Don't hesitate to get in touch!</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>"Kashta e Kumtrit" Street, Durrës</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>edvinperfundi21@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+355 68 56 36 964</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1494.6090709518762!2d19.50411!3d41.31722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x68135fbd75c240a2!2sRruga%20Herakel%2C%20Durr%C3%ABs%2C%20Albania!5e0!3m2!1sen!2s!4v1623267958477" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <br>
+              <div class="text-center"><button class="btn btn-primary" type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright 2023 <strong><span>Edvin Perfundi</span></strong>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // JavaScript to handle the typing animation and class toggling
+    const typedSpan = document.querySelector('.typed');
+    const typedItems = typedSpan.getAttribute('data-typed-items').split(', ');
+  
+    let currentItem = 0;
+  
+    function applyColoredText(text) {
+      const words = text.split(' ');
+      const coloredWords = words.map(word => {
+        if (word === 'Python' || word === 'Web' || word === 'Data' || word === 'Graphic') {
+          return `<span class="${word.toLowerCase()}-developer">${word}</span>`;
+        }
+        return word;
+      });
+      return coloredWords.join(' ');
+    }
+  
+    function typeNextItem() {
+      const nextItem = typedItems[currentItem];
+      typedSpan.innerHTML = applyColoredText(nextItem);
+      currentItem = (currentItem + 1) % typedItems.length;
+      setTimeout(typeNextItem, 2000); // Change the delay between items if needed
+    }
+  
+    // Start the typing animation
+    typeNextItem();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
