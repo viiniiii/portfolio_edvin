@@ -41,7 +41,7 @@
     {% for blog in all_blogs %}
     <div class="container-fluid">
     <a href="{% url 'blog:detail' blog.id %}"><h1 class="title">{{blog.title}}</h1></a>
-    <div class="container">
+    <div>
     <h5>{{blog.date|date:'M d Y' }}</h5>
     <p>{{blog.description|safe|truncatechars:200 }}</p>
     </div>
@@ -55,12 +55,10 @@ window.onscroll = function() {
   var navbar = document.querySelector('.navbar');
 
   if (prevScrollPos > currentScrollPos) {
-    // Show the menu when scrolling up
     navbar.style.top = '0';
     navbar.classList.add('active');
   } else {
-    // Hide the menu when scrolling down
-    navbar.style.top = '-80px'; // Adjust the height of the menu as needed
+    navbar.style.top = '-80px';
     navbar.classList.remove('active');
   }
 
