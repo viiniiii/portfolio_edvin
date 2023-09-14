@@ -54,11 +54,9 @@ p{
     .image img {
         max-width: 80%; 
         height: auto; 
+        padding-left: 20px;
     }
     
-    .image {
-        text-align: center; 
-    }
 }
 
 .btn.btn-primary.btn-lg{
@@ -67,4 +65,3 @@ p{
     position: relative;
     top: 5%;
     left: 1%;
-}
