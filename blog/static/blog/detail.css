@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 25px;
+    color:#176B87;
+    font-weight: bolder;
+}
+body{
+    background-color: #053B50;
+}
+
+h4{
+    font-size: 40px;
+    color:#176B87;
+    padding-left: 40px;
+}
+
+p{
+    padding-left: 10px;
+    padding-right: 50px;
+    font-size: 20px;
+    color:#EEEEEE;
+    word-wrap: break-word;
+}
+
+.image{
+    width: 30%;
+    padding: 30px 20px;
+}
+
+.text{
+    width: 70%;
+    padding: 30px 20px;
+}
+.container {
+    display: inline-flex;
+    gap: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 0px;
+    }
+}
+
+.btn.btn-primary.btn-lg{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 5%;
+    left: 1%;
+}
