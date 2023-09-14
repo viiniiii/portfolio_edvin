@@ -24,24 +24,40 @@ p{
 }
 
 .image{
-    width: 30%;
-    padding: 30px 20px;
+    width: 500px;
+    padding: 30px 0px;
 }
 
 .text{
-    width: 70%;
-    padding: 30px 20px;
+    width: 1100px;
+    padding: 30px 0px 30px 20px;
 }
-.container {
+.container-fluid{
     display: inline-flex;
     gap: 5px;
 }
-
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column; 
-        align-items: flex-start; 
-        padding: 0px;
+    .container-fluid {
+        flex-direction: column;
+    }
+    h1{
+        text-align: left;
+        padding-left: 20px;
+    }
+    h4{
+        padding-left: 30px;
+    }
+    .text {
+        width: 100%;
+        padding: 30px 10px;
+    }
+    .image img {
+        max-width: 80%; 
+        height: auto; 
+    }
+    
+    .image {
+        text-align: center; 
     }
 }
 
